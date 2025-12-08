@@ -27,7 +27,7 @@ Thanks, come back later :D
 $
 ```
 # Main Goal
-y main goal is to allow anyone to keep a plain text file with all their passwords **securely**
+My main goal is to allow anyone to keep a plain text file with all their passwords **securely**
 
 # My Recommendation
 I really recommend (since we are executing this in the wonderful Linux environment) to change owner and execution permission of the executable itself **AND** your password file.
