@@ -31,3 +31,7 @@ y main goal is to allow anyone to keep a plain text file with all their password
 
 # My Recommendation
 I really recommend (since we are executing this in the wonderful Linux environment) to change owner and execution permission of the executable itself **AND** your password file.
+
+# How to compile
+Compile it as any other C file:
+gcc new_sofi.c encrypter
