@@ -34,4 +34,4 @@ I really recommend (since we are executing this in the wonderful Linux environme
 
 # How to compile
 Compile it as any other C file:
-gcc new_sofi.c encrypter
+gcc new_sofi.c -o encrypter
