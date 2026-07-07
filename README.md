@@ -1,4 +1,4 @@
-# passworEncrypter
+# passwordEncrypter
 A C password-encrypter implementation, designed to be used via CLI. It uses two flags, -e and -d in order to encrypt, and decrypt respectively
 
 # How it works 
@@ -8,10 +8,10 @@ Since it uses this file, it is mathematically impossible to discover the actual 
 
 
 ## Demo version
-Since you may want to use some CLI special characters or the answer may contain them, you will have to use single quotes ('') in order to send what you want to encrypt/decrypt
+Since you may want to use some CLI special characters or the answer may contain them, you will have to use single quotes ( '\<something>' ) in order to send what you want to encrypt/decrypt
 
 ### Encrypting
-```
+```bash
 $./encrypter -e 'hello_fellas**123'
 Encrypting...
 d{^xEXex2B"B4M^xCV/B\z`lKBKByiSBiW
@@ -19,13 +19,15 @@ come back later :D
 $
 ```
 ### Decrypting
-```
+```bash
 $./encrypter -d  '{^xEXex2B"B4M^xCV/B\z`lKBKByiSBiW'
 Decrypting...
 hello_fellas**123
 Thanks, come back later :D
 $
 ```
+If you want to use spaces, sofi will encrypt it as ~, so you better know when it is that char and when it is not. 
+
 # Main Goal
 My main goal is to allow anyone to keep a plain text file with all their passwords **securely**
 
@@ -34,4 +36,6 @@ I really recommend (since we are executing this in the wonderful Linux environme
 
 # How to compile
 Compile it as any other C file:
+```C
 gcc new_sofi.c -o encrypter
+```
